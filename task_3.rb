@@ -17,5 +17,5 @@ else
 puts(final_number)
 
 
-#file_out = File.new("./file.txt", "a:UTF-8")
-#file_out.print(sum_num)
+file_out = File.new("./file.txt", "a:UTF-8")
+file_out.print(final_number)

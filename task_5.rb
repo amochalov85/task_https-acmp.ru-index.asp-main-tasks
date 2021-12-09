@@ -9,8 +9,7 @@ line.map do |i|
     b << i
   end
 end
-c = a.count > b.count
 file_out = File.new('./file_5.txt', 'a:UTF-8')
-file_out.print(a.to_s)
-file_out.print("\n#{b.to_s}")
-file_out.print("\n#{c.to_s}")
+file_out.print(a.join(', '))
+file_out.print("\n#{b.join(', ')}")
+file_out.print("\n#{a.count >= b.count}")
